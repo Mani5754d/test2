@@ -1,0 +1,256 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #2f38b6;
+    font-size: 24px;
+    font-family: 'Charmonman';
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.search-logo img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #ffffff;
+    height: 20vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 30px;
+    color: #2f38b6;
+    margin: 2px;
+}
+
+.hero p {
+    font-size: 8px;
+    margin: 2px;
+    line-height: 1.5;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-style: italic;
+    color: #2f38b6;
+    margin: 10px 0;
+}
+
+/* Product Listings Styles */
+.product-listings {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.product-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.product-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-text p {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.product-text h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.product-text button {
+    background-color: #2f38b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-text button:hover {
+    background-color: #1c2b8b;
+}
+
+.product-image {
+    flex: 1;
+    text-align: right;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 1rem;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    margin: 0.5rem 0;
+}
+
+.footer-section a {
+    color: #8e68e7;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 0.5rem;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For devices smaller than 480px */
+@media screen and (max-width: 480px) {
+    .product-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .product-text h3 {
+        font-size: 18px;
+    }
+
+    .product-text p {
+        font-size: 18px;
+    }
+
+    .product-text h2 {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero h2 {
+        font-size: 16px;
+    }
+
+    .product-image {
+        order: 0;
+        width: 40%;
+        text-align: center;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

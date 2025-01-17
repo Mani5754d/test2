@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Store</title>
+  <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>T-Shirt Store</h1>
+      <nav>
+        <a href="#slider">Home</a>
+        <a href="#description">Description</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Image and Video Slider -->
+    <div class="slider" id="slider">
+      <button class="prev" onclick="changeSlide(-1)">&#8249;</button>
+      <div class="slides">
+        <img src="images/black1.jpg" alt="Black T-Shirt 1" class="slide black">
+        <img src="images/black2.jpg" alt="Black T-Shirt 2" class="slide black">
+        <video class="slide black" autoplay muted loop>
+          <source src="videos/black.mp4" type="video/mp4">
+        </video>
+        <img src="images/white1.jpg" alt="White T-Shirt 1" class="slide white">
+        <img src="images/white2.jpg" alt="White T-Shirt 2" class="slide white">
+        <video class="slide white" autoplay muted loop>
+          <source src="videos/white.mp4" type="video/mp4">
+        </video>
+        <img src="images/green1.jpg" alt="Green T-Shirt 1" class="slide green">
+        <img src="images/green2.jpg" alt="Green T-Shirt 2" class="slide green">
+        <video class="slide green" autoplay muted loop>
+          <source src="videos/green.mp4" type="video/mp4">
+        </video>
+      </div>
+      <button class="next" onclick="changeSlide(1)">&#8250;</button>
+    </div>
+
+    <!-- Description -->
+    <div class="description" id="description">
+      <p>High-quality T-shirts available in various sizes and colors. Durable, comfortable, and stylish!</p>
+    </div>
+
+    <!-- Color Selection -->
+    <div class="color-selection">
+      <h3>Select Color:</h3>
+      <div class="color-options">
+        <button class="color-circle white" onclick="filterColor('white')"></button>
+        <button class="color-circle black" onclick="filterColor('black')"></button>
+        <button class="color-circle green" onclick="filterColor('green')"></button>
+      </div>
+    </div>
+
+    <!-- Size Selection -->
+    <div class="size-selection">
+      <h3>Select Size:</h3>
+      <div class="size-options">
+        <button class="size-btn" onclick="selectSize(this)">M</button>
+        <button class="size-btn" onclick="selectSize(this)">L</button>
+        <button class="size-btn" onclick="selectSize(this)">XL</button>
+      </div>
+    </div>
+
+    <!-- Size Chart -->
+    <button class="size-chart-btn" onclick="showSizeChart()">Size Chart</button>
+    <div class="popup" id="size-chart-popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="hideSizeChart()">×</span>
+        <h3>Size Chart</h3>
+        <p>M: Chest 38", Length 27"</p>
+        <p>L: Chest 42", Length 29"</p>
+        <p>XL: Chest 46", Length 31"</p>
+      </div>
+    </div>
+
+    <!-- Shop Button -->
+    <div class="shop-section">
+      <button class="shop-btn">Shop Now</button>
+    </div>
+
+    <!-- Contact -->
+    <footer id="contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@tshirtstore.com</p>
+      <p>Phone: +123 456 7890</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
